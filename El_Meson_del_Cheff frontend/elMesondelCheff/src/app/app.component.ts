@@ -9,7 +9,9 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'El Meson Del Cheff';
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    this.goToLogin();
+  }
 
   VerMenu() {
     this.router.navigate(['verMenu']);
@@ -17,6 +19,10 @@ export class AppComponent {
 
   VerMesas() {
     this.router.navigate(['verMesas']);
+  }
+
+  goToLogin(){
+    this.router.navigate(['login']);
   }
 
 

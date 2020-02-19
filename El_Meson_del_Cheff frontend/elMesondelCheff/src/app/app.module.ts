@@ -12,6 +12,7 @@ import { VerMesasComponent } from './Mesas/ver-mesas/ver-mesas.component';
 import { CardPlatoComponent } from './Menu/card-plato/card-plato.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CardMesasComponent } from './Mesas/card-mesas/card-mesas.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CardMesasComponent } from './Mesas/card-mesas/card-mesas.component';
     VerPlatosComponent,
     VerMesasComponent,
     CardPlatoComponent,
-    CardMesasComponent
+    CardMesasComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.texto-link-naranja {
+    color: #ffaa00;
+}
+
+.texto-link-naranja:hover {
+    color: #c58504 !important;
+}
+
+.boton-naranja-full {
+    background-color: #ffaa00;
+    border-color: #ffaa00;
+    color: white;
+}
+
+.boton-naranja-full:hover {
+    color: white;
+    background: #da9202;
+    border-color: #da9202;
+}
