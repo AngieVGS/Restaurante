@@ -14,6 +14,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { CardMesasComponent } from './Mesas/card-mesas/card-mesas.component';
 import { LoginComponent } from './login/login.component';
 import { ConfirmEmailComponent } from './login/confirm-email/confirm-email.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 @NgModule({
   declarations: [
@@ -23,15 +26,19 @@ import { ConfirmEmailComponent } from './login/confirm-email/confirm-email.compo
     CardPlatoComponent,
     CardMesasComponent,
     LoginComponent,
-    ConfirmEmailComponent
+    ConfirmEmailComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    MatNativeDateModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [IngredientesService],
   bootstrap: [AppComponent]

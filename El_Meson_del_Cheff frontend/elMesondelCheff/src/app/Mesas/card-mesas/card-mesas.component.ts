@@ -17,7 +17,7 @@ export class CardMesasComponent implements OnInit {
     console.log(this.mesa);
   }
 
-  getImagen() : void {
+  getImagen(): void {
     if ( this.mesa.estado_mesa) {
       this.mesa.imagen = 'https://previews.123rf.com/images/iko/iko1512/iko151200005/48860601-grupo-multi%C3%A9tnico-de-amigos-felices-que-almuerzan-y-divertirse-en-el-restaurante.jpg';
     } else {
