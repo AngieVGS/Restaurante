@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'elMesondelCheff';
+  title = 'El Meson Del Cheff';
+
+  constructor(private router: Router) {}
+
+  VerMenu() {
+    this.router.navigate(['verMenu']);
+  }
+
+  VerMesas() {
+    this.router.navigate(['verMesas']);
+  }
+
+
 }

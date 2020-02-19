@@ -33,9 +33,42 @@ public class Plato {
 	@Column
 	private Long precio_plato;
 	
+	@Column
+	private String imagen;
+	
 	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(name = "plato_ingrediente", joinColumns = @JoinColumn(name = "id_plato"), inverseJoinColumns = @JoinColumn(name = "id_ingrediente"))
 	private List<Ingrediente> ingredientes_plato;
+			
+	
+
+	public Plato() {
+	}
+	
+	
+	public Plato(Long id_plato, Boolean estado_plato, String nombre_plato, String descripcion_plato, Long precio_plato,
+			String imagen, List<Ingrediente> ingredientes_plato) {
+		this.id_plato = id_plato;
+		this.estado_plato = estado_plato;
+		this.nombre_plato = nombre_plato;
+		this.descripcion_plato = descripcion_plato;
+		this.precio_plato = precio_plato;
+		this.imagen = imagen;
+		this.ingredientes_plato = ingredientes_plato;
+	}
+
+
+	
+
+	public String getImagen() {
+		return imagen;
+	}
+
+
+	public void setImagen(String imagen) {
+		this.imagen = imagen;
+	}
+
 
 	public Long getId_plato() {
 		return id_plato;
@@ -85,6 +118,7 @@ public class Plato {
 		this.ingredientes_plato = ingredientes_plato;
 	}
 
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -92,11 +126,13 @@ public class Plato {
 		result = prime * result + ((descripcion_plato == null) ? 0 : descripcion_plato.hashCode());
 		result = prime * result + ((estado_plato == null) ? 0 : estado_plato.hashCode());
 		result = prime * result + ((id_plato == null) ? 0 : id_plato.hashCode());
+		result = prime * result + ((imagen == null) ? 0 : imagen.hashCode());
 		result = prime * result + ((ingredientes_plato == null) ? 0 : ingredientes_plato.hashCode());
 		result = prime * result + ((nombre_plato == null) ? 0 : nombre_plato.hashCode());
 		result = prime * result + ((precio_plato == null) ? 0 : precio_plato.hashCode());
 		return result;
 	}
+
 
 	@Override
 	public boolean equals(Object obj) {
@@ -122,6 +158,11 @@ public class Plato {
 				return false;
 		} else if (!id_plato.equals(other.id_plato))
 			return false;
+		if (imagen == null) {
+			if (other.imagen != null)
+				return false;
+		} else if (!imagen.equals(other.imagen))
+			return false;
 		if (ingredientes_plato == null) {
 			if (other.ingredientes_plato != null)
 				return false;
@@ -140,10 +181,13 @@ public class Plato {
 		return true;
 	}
 
+
 	@Override
 	public String toString() {
 		return "Plato [id_plato=" + id_plato + ", estado_plato=" + estado_plato + ", nombre_plato=" + nombre_plato
-				+ ", descripcion_plato=" + descripcion_plato + ", precio_plato=" + precio_plato
+				+ ", descripcion_plato=" + descripcion_plato + ", precio_plato=" + precio_plato + ", imagen=" + imagen
 				+ ", ingredientes_plato=" + ingredientes_plato + "]";
 	}
+
+	
 }
