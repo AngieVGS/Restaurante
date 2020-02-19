@@ -1,1 +1,4 @@
 <p>ver-mesas works!</p>
+<div class="card-deck-container" *ngFor="let mesa of  mesas" >
+  <app-card-mesas class="card-item" [mesa] = mesa></app-card-mesas>
+</div>

@@ -13,6 +13,7 @@ export class CardPlatoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.plato);
   }
 
 }

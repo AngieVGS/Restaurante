@@ -11,13 +11,15 @@ import { VerPlatosComponent } from './Menu/ver-platos/ver-platos.component';
 import { VerMesasComponent } from './Mesas/ver-mesas/ver-mesas.component';
 import { CardPlatoComponent } from './Menu/card-plato/card-plato.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CardMesasComponent } from './Mesas/card-mesas/card-mesas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     VerPlatosComponent,
     VerMesasComponent,
-    CardPlatoComponent
+    CardPlatoComponent,
+    CardMesasComponent
   ],
   imports: [
     BrowserModule,

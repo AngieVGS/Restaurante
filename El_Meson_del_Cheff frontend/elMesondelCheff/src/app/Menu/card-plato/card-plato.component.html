@@ -1,12 +1,12 @@
 <mat-card class="example-card">
   <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-subtitle>{{plato.nombrePlato}}</mat-card-subtitle>
+    <mat-card-title>{{plato.nombre_plato}}</mat-card-title>
   </mat-card-header>
-  <img mat-card-image src={{plato.imagen}} alt="Foto {{plato.nombrePlato}}">
+  <img mat-card-image src={{plato.imagen}} alt="Foto {{plato.nombre_plato}}">
   <mat-card-content>
-    <p>{{plato.descripcion}}</p>
-    <p>{{plato.precioPlato}}</p>
+    <mat-card-title>{{plato.nombre_plato}}</mat-card-title>
+    <p>{{plato.descripcion_plato}}</p>
+    <p>{{plato.precio_plato}}</p>
   </mat-card-content>
   <mat-card-actions>
     <button mat-button>Ver Detalles</button>
