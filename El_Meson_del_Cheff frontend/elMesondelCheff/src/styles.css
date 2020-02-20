@@ -30,6 +30,31 @@ body {
     border-color: #da9202;
 }
 
+.boton-naranja-inline {
+    background-color: white;
+    border-color: #ffaa00;
+    color: #ffaa00;
+}
+
+.boton-naranja-inline:hover {
+    color: white;
+    background: #ffaa00;
+    border-color: #ffaa00;
+}
+
+.boton-naranja-inline {
+    background-color: white;
+    border-color: #ffaa00;
+    color: #ffaa00;
+}
+
+.boton-gris-inline:hover {
+    color: white;
+    background: #ffaa00;
+    border-color: #ffaa00;
+}
+
 .linea {
-    background-color: black;
+    background-color: rgb(34, 34, 34) !important;
+    color: rgb(34, 34, 34) !important;
 }
