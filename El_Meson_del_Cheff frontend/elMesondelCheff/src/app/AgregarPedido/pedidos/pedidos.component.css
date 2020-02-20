@@ -17,3 +17,32 @@
     justify-content: center;
     color: white;
 }
+
+
+/**/
+
+.scroll-container-2,
+.scroll-area-2 {
+    max-width: 100%;
+    height: 500px;
+}
+
+.scroll-container-2 {
+    overflow: auto;
+}
+
+.scroll-area-2 {
+    scroll-snap-align: start;
+}
+
+.scroll-area-2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.linea {
+    margin-left: 2%;
+    margin-right: 2%;
+    color: black !important;
+}
