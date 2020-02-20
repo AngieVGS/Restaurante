@@ -21,7 +21,7 @@ export class AppComponent {
     this.router.navigate(['verMesas']);
   }
 
-  goToLogin(){
+  goToLogin() {
     this.router.navigate(['login']);
   }
 

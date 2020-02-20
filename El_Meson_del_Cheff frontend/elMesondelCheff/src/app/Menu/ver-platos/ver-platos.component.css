@@ -11,3 +11,9 @@
 .card-item {
   padding: 3px 3px 3px 3px;
 }
+
+app-ver-plato {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}

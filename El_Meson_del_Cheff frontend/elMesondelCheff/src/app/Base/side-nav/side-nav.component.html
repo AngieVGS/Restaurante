@@ -1,0 +1,16 @@
+<mat-sidenav-container class="example-container fixed-top">
+  <mat-sidenav #sidenav mode="side" opened="true" style="min-width:50px; background: #F3F3F3;" class="shadow_right"
+    autosize>
+    <mat-nav-list style="min-width:60px;">
+      <mat-list-item>
+        <button mat-raised-button color="primary" (click)=VerMenu()> Menu </button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-raised-button color="primary" (click)=VerMesas()> Mesas</button>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -16,7 +16,15 @@ import { LoginComponent } from './login/login.component';
 import { ConfirmEmailComponent } from './login/confirm-email/confirm-email.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
-
+import { SideNavComponent } from './Base/side-nav/side-nav.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatButtonModule} from '@angular/material/button';
+import {MatListModule} from '@angular/material/list';
+import {MatIconModule} from '@angular/material/icon';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { ListaProductosComponent } from './AgregarPedido/lista-productos/lista-productos.component';
+import { PedidosComponent } from './AgregarPedido/pedidos/pedidos.component';
+import { AgregarPedidoComponent } from './agregar-pedido/agregar-pedido.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +35,10 @@ import { MatNativeDateModule } from '@angular/material/core';
     CardMesasComponent,
     LoginComponent,
     ConfirmEmailComponent,
+    SideNavComponent,
+    ListaProductosComponent,
+    PedidosComponent,
+    AgregarPedidoComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -38,7 +50,13 @@ import { MatNativeDateModule } from '@angular/material/core';
     FormsModule,
     MatNativeDateModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSidenavModule,
+    MatButtonModule,
+    MatListModule,
+    MatIconModule,
+    MatGridListModule,
+    BrowserModule
   ],
   providers: [IngredientesService],
   bootstrap: [AppComponent]
