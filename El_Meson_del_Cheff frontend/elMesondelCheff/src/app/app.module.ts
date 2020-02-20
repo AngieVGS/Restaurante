@@ -24,7 +24,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ListaProductosComponent } from './AgregarPedido/lista-productos/lista-productos.component';
 import { PedidosComponent } from './AgregarPedido/pedidos/pedidos.component';
-import { AgregarPedidoComponent } from './agregar-pedido/agregar-pedido.component';
+import { AgregarPedidoComponent } from './AgregarPedido/agregar-pedido.component';
 
 @NgModule({
   declarations: [
