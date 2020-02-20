@@ -1,4 +1,53 @@
-<div class="col">
-    <div class="row border border-dark"></div>
-    <div class="row border border-info"></div>
+<div class="row">
+    <div class="col-1">
+        <button class="rounded-pill btn boton-naranja-full">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-arrow-left">
+                <line x1="19" y1="12" x2="5" y2="12" />
+                <polyline points="12 19 5 12 12 5" /></svg>
+        </button>
+    </div>
+    <div class="col-11 text-center">
+        <h1>Mesa</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6 border ">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Buscar">
+        </div>
+    </div>
+    <div class="col-6 border ">
+        <div class="lista border border-secondary" id="divTablaMiembros">
+            <div class="">
+                <div class="table-responsive">
+                    <table class="table table-hover table-sm row-border hover" id="tablaMiembros">
+                        <thead class="text-center fondo">
+                            <tr class="">
+                                <th>Plato</th>
+                                <th>Cantidad(Pl)</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 
+                            <tr *ngFor="let pedido of pedidos | filter: buscarPedidoFiltro" class="text-center">
+                                <td class="text-center">{{pedido.nombre}}</td>
+                                <td class="text-center">{{pedido.cantidad}}</td>
+                                <td class="text-center">{{pedido.valor}}</td>
+                            </tr>
+                             -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="dropdown-divider linea linea-final"></div>
+            <div class="text-center">
+                <h2>Total:</h2>
+            </div>
+        </div>
+    </div>
 </div>

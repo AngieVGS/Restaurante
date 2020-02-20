@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'El Meson Del Cheff';
 
   constructor(private router: Router) {
-    //this.goToLogin();
+    //this.irVerPedidos();
   }
 
   VerMenu() {
@@ -23,6 +23,10 @@ export class AppComponent {
 
   goToLogin() {
     this.router.navigate(['login']);
+  }
+
+  irVerPedidos(){
+    this.router.navigate(['app-pedidos']);
   }
 
 
