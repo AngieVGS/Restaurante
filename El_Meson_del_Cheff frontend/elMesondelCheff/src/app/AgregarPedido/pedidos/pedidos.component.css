@@ -1,5 +1,21 @@
-#maxH {
-    height: 1000px;
-    /*width: 200px;*/
-    overflow-y: scroll;
+.scroll-container,
+.scroll-area {
+    max-width: 100%;
+    height: 600px;
+}
+
+.scroll-container {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.scroll-area {
+    scroll-snap-align: start;
+}
+
+.scroll-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
